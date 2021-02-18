@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import './fonts/fonts.css';
 
 import Colors from './colors';
 
@@ -7,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
   * {
     border: 0;
     box-sizing: border-box;
-    font-family: 'FuturaPT Medium';
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     outline: none !important;
     padding: 0;
@@ -34,6 +33,10 @@ const GlobalStyle = createGlobalStyle`
 
   button, a {
     cursor: pointer;
+  }
+
+  h1 {
+    font-family: 'Source Serif Pro', serif;
   }
 `;
 
