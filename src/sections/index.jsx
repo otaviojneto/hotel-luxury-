@@ -1,4 +1,5 @@
 import Hero from './Hero';
+import Nav from './Nav';
+import Services from './Services';
 
-// eslint-disable-next-line import/prefer-default-export
-export { Hero };
+export { Hero, Nav, Services };

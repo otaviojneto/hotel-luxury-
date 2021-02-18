@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
 
   body,
   html {
-    color: ${Colors.grey};
+    color: ${Colors.secondary};
     font-size: 16px;
   }
 
@@ -36,6 +36,36 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 60px;
+  }
+
+  h2 {
+    font-size: 26px;
+    letter-spacing: 8px;
+    line-height: 30px;
+  }
+
+  h3 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  h4 {
+    font-family: 'Source Serif Pro', serif;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  h5 {
+    font-family: 'Source Serif Pro', serif;
+  }
+
+  h6 {
     font-family: 'Source Serif Pro', serif;
   }
 `;

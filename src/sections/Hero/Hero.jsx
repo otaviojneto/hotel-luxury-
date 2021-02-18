@@ -1,14 +1,46 @@
 import React from 'react';
-
-// import { Container } from './styles';
+import { Blockquote, Content, Scroll } from './styles';
+import * as Images from '../../assets';
+import { Container } from '../../styles';
+import { Button } from '../../components';
 
 const Hero = () => {
   return (
-    <>
-      <h1>Title</h1>
+    <Content>
+      <Container>
+        <Blockquote>
+          <h5>WELCOME TO</h5>
 
-      <p>Paragraph</p>
-    </>
+          <h1>LUXURY</h1>
+
+          <h6>HOTELS</h6>
+
+          <p className="luxury-text">
+            Book your stay and enjoy Luxury <br />
+            redefined at the most affordable rates. Copy
+          </p>
+          <Button to="/">
+            <img
+              className="btn-logo"
+              src={Images.IconBtn}
+              alt="logo"
+            />
+            <span>BOOK NOW</span>
+          </Button>
+        </Blockquote>
+
+        <Scroll>
+          <a href="#">
+            <span>Scroll</span>
+            <img
+              className="scroll-img"
+              src={Images.Scroll}
+              alt="scroll"
+            />
+          </a>
+        </Scroll>
+      </Container>
+    </Content>
   );
 };
 
