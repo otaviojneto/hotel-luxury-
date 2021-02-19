@@ -1,11 +1,20 @@
 import React from 'react';
-import { Hero, Nav } from '../../sections';
+import {
+  Footer,
+  Hero,
+  Nav,
+  Services,
+  Text,
+} from '../../sections';
 
 const Home = () => {
   return (
     <>
       <Nav />
       <Hero />
+      <Services />
+      <Text />
+      <Footer />
     </>
   );
 };

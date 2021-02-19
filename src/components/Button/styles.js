@@ -10,7 +10,6 @@ const style = css`
   display: flex;
   height: 60px;
   justify-content: center;
-  margin: 0 auto;
   width: 200px;
   color: ${Colors.white};
   font-size: 16px;

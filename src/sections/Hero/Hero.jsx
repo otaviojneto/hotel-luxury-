@@ -1,12 +1,12 @@
 import React from 'react';
 import {
   Blockquote,
+  Button,
   Container,
   Content,
   Scroll,
 } from './styles';
 import * as Images from '../../assets';
-import { Button } from '../../components';
 
 const Hero = () => {
   return (
@@ -23,6 +23,7 @@ const Hero = () => {
             Book your stay and enjoy Luxury <br />
             redefined at the most affordable rates. Copy
           </p>
+
           <Button to="/">
             <img
               className="btn-logo"
