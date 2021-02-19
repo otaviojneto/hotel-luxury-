@@ -1,7 +1,11 @@
 import React from 'react';
-import { Blockquote, Content, Scroll } from './styles';
+import {
+  Blockquote,
+  Container,
+  Content,
+  Scroll,
+} from './styles';
 import * as Images from '../../assets';
-import { Container } from '../../styles';
 import { Button } from '../../components';
 
 const Hero = () => {
@@ -32,11 +36,7 @@ const Hero = () => {
         <Scroll>
           <a href="#">
             <span>Scroll</span>
-            <img
-              className="scroll-img"
-              src={Images.Scroll}
-              alt="scroll"
-            />
+            <img src={Images.Scroll} alt="scroll" />
           </a>
         </Scroll>
       </Container>

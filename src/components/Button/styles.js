@@ -19,7 +19,8 @@ const style = css`
 
   img {
     margin-right: 15px;
-    width: 20px;
+    padding-bottom: 1px;
+    width: 16px;
   }
 `;
 

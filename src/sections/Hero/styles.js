@@ -1,6 +1,16 @@
 import styled from 'styled-components';
 import * as images from '../../assets';
-import { Colors } from '../../styles';
+import {
+  Colors,
+  Container as ContainerGrid,
+} from '../../styles';
+
+export const Container = styled(ContainerGrid)`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 240px;
+`;
 
 export const Content = styled.div`
   align-items: center;
@@ -11,14 +21,13 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px;
   height: 100vh;
   width: 100%;
 `;
 
 export const Blockquote = styled.blockquote`
   color: ${Colors.white};
-  padding-top: 120px;
+  padding-bottom: 40px;
 
   h5 {
     font-family: 'Montserrat', sans-serif;
@@ -47,9 +56,19 @@ export const Blockquote = styled.blockquote`
 `;
 
 export const Scroll = styled.div`
-  align-items: center;
   color: ${Colors.white};
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: inline-block;
+
+  a {
+    align-items: center;
+    color: ${Colors.white};
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+  }
+
+  img {
+    width: 30px;
+    padding-top: 10px;
+  }
 `;
