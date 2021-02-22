@@ -1,10 +1,13 @@
 import React from 'react';
-import { Hero } from '../../sections';
+import { Footer, Hero, Nav, Text } from '../../sections';
 
 const Facilities = () => {
   return (
     <>
+      <Nav />
       <Hero />
+      <Text />
+      <Footer />
     </>
   );
 };

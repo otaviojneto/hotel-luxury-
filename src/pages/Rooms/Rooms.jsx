@@ -1,7 +1,15 @@
 import React from 'react';
+import { Footer, Hero, Nav, Text } from '../../sections';
 
 const Rooms = () => {
-  return <div>fghjk</div>;
+  return (
+    <div>
+      <Nav />
+      <Hero />
+      <Text />
+      <Footer />
+    </div>
+  );
 };
 
 export default Rooms;

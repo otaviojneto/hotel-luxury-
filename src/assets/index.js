@@ -13,7 +13,7 @@ import Laundry from './images/laundry.png';
 import PoolsideBar from './images/poolside-bar.png';
 import Restaurant from './images/restaurant.png';
 import RoomWhite from './images/room-white.png';
-import Scroll from './images/Scroll.png';
+import Scroll from './images/scroll.png';
 import SingleRoom from './images/single-room.png';
 import SwimmingPool from './images/swimming-pool.png';
 import Gyn from './images/the-gyn.png';

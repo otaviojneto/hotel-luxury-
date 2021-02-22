@@ -19,7 +19,7 @@ export const Button = styled(Btn)`
 
 export const Content = styled.div`
   align-items: center;
-  background-image: url(${images.BgLuxury});
+  background-image: font-size: ${props => (props.bg ? props.bg : ${Colors.secondary})}px;
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100%;
