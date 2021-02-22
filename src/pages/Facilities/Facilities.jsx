@@ -1,7 +1,12 @@
 import React from 'react';
+import { Hero } from '../../sections';
 
 const Facilities = () => {
-  return <div>fghjk</div>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 };
 
 export default Facilities;
