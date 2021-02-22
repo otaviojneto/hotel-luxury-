@@ -1,49 +1,79 @@
 import styled from 'styled-components';
 import * as images from '../../assets';
+import {
+  Colors,
+  Container as ContainerGrid,
+} from '../../styles';
+import { Link as Btn } from '../../components/Button/styles';
 
-export const Bg = styled.div`
-  background-image: url(${images.BgMain});
+export const Container = styled(ContainerGrid)`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 240px;
+`;
+
+export const Button = styled(Btn)`
+  margin: 0 auto;
+`;
+
+export const Content = styled.div`
+  align-items: center;
+  background-image: url(${images.BgLuxury});
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
   width: 100%;
 `;
 
-export const Container = styled.section`
-  font-size: 1rem;
-  height: 100vh;
-  max-width: 100%;
-  position: relative;
+export const Blockquote = styled.blockquote`
+  color: ${Colors.white};
+  padding-bottom: 40px;
 
-  @media (min-width: 1024px) {
-    margin: 0 auto;
-    max-width: 83.333%;
+  h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  h1 {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 70px;
+  }
+
+  h6 {
+    font-size: 26px;
+    letter-spacing: 8px;
+    line-height: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    margin-bottom: 60px;
   }
 `;
 
-export const Header = styled.header`
-  display: flex;
-  padding-left: 10%;
-  padding: 38px 10% 0;
+export const Scroll = styled.div`
+  color: ${Colors.white};
+  display: inline-block;
 
-  div {
-    margin-left: 15px;
+  a {
+    align-items: center;
+    color: ${Colors.white};
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
 
-    span {
-      font-size: 16px;
-      font-style: oblique;
-      font-weight: 600;
-      letter-spacing: 0.32px;
-      line-height: 27px;
-    }
-
-    h3 {
-      font-family: 'FuturaPT Bold', sans-serif;
-      font-size: 37px;
-      font-style: oblique;
-      letter-spacing: 0.32px;
-      line-height: 37px;
-      margin-left: -1px;
-    }
+  img {
+    padding-top: 10px;
+    width: 30px;
   }
 `;

@@ -1,25 +1,47 @@
 import React from 'react';
-import { Container, Bg, Header } from './styles';
-import * as images from '../../assets';
-import { Box } from '../../components/index';
+import {
+  Blockquote,
+  Button,
+  Container,
+  Content,
+  Scroll,
+} from './styles';
+import * as Images from '../../assets';
 
 const Hero = () => {
   return (
-    <Bg>
+    <Content>
       <Container>
-        <Header>
-          <img src={images.trekking} alt="teste" />
+        <Blockquote>
+          <h5>WELCOME TO</h5>
 
-          <div>
-            <span>CHEGOU O</span>
-            <h3></h3>
-            <h3>FIAT MOBI TREKKING</h3>
-            <span>TÁ TUDO DOMINADO</span>
-          </div>
-        </Header>
-        <Box />
+          <h1>LUXURY</h1>
+
+          <h6>HOTELS</h6>
+
+          <p className="luxury-text">
+            Book your stay and enjoy Luxury <br />
+            redefined at the most affordable rates. Copy
+          </p>
+
+          <Button to="/">
+            <img
+              className="btn-logo"
+              src={Images.IconBtn}
+              alt="logo"
+            />
+            <span>BOOK NOW</span>
+          </Button>
+        </Blockquote>
+
+        <Scroll>
+          <a href="#">
+            <span>Scroll</span>
+            <img src={Images.Scroll} alt="scroll" />
+          </a>
+        </Scroll>
       </Container>
-    </Bg>
+    </Content>
   );
 };
 
